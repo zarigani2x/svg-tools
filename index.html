@@ -3,80 +3,18 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Smart SVG</title>
+    <title>SVG tools</title>
     <link rel="stylesheet" href="style/reset.css" />
-    <link rel="stylesheet" href="style/style.css" />
+    <link rel="stylesheet" href="style/common.css" />
   </head>
   <body>
-    <header>
-      <div id="menu-btn">
-        <svg viewBox="0 0 24 14" xmlns="http://www.w3.org/2000/svg">
-          <path
-            d="M0 1C0 .45 .45 0 1 0H23C23.55 0 24 .45 24 1C24 1.55 23.55 2 23 2H1C.45 2 0 1.55 0 1ZM0 13C0 12.45 .45 12 1 12H23C23.55 12 24 12.45 24 13C24 13.55 23.55 14 23 14H1C.45 14 0 13.55 0 13ZM1 6C.45 6 0 6.45 0 7C0 7.55 .45 8 1 8H23C23.55 8 24 7.55 24 7C24 6.45 23.55 6 23 6H1Z"
-          />
-        </svg>
-      </div>
-    </header>
-    <div class="container">
-      <h2>Options</h2>
-      <ul id="option-list">
-        <li>
-          <input
-            type="checkbox"
-            name="quickCopy"
-            id="option-quickCopy"
-            checked
-          />
-          <label for="option-quickCopy">Quick copy</label>
-        </li>
-        <li>
-          <input type="checkbox" name="fill" id="option-fill" checked />
-          <label for="option-fill">Remove colors</label>
-        </li>
-      </ul>
-    </div>
-    <div class="container-f">
-      <div class="textarea-box">
-        <textarea
-          id="input-text"
-          cols="30"
-          rows="10"
-          placeholder="Original text"
-        ></textarea>
-      </div>
-      ›
-      <div class="textarea-box">
-        <textarea
-          id="output-text"
-          cols="30"
-          rows="10"
-          placeholder="Result"
-        ></textarea>
-        <div id="copy-area">
-          <div id="copy-icon">
-            <svg
-              focusable="false"
-              viewBox="0 0 16 21"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M0 16C0 16.18 .05 16.35 .13 16.5C.31 16.8 .63 17 1 17H11C11.55 17 12 16.55 12 16V1C12 .45 11.55 0 11 0H4.5H4.45C4.25 0 4.07 .06 3.91 .16C3.83 .21 3.76 .27 3.7 .34L.25 4.22C.16 4.32 .09 4.44 .05 4.57C.02 4.67 0 4.77 0 4.88V5V15.5V16ZM1 15V5L4.5 1H10H11V2V15V16H10H2H1V15.5V15ZM4 18.5C4 18.22 4.22 18 4.5 18C4.78 18 5 18.22 5 18.5V19V20H6H14H15V19V6V5H14H13.5C13.22 5 13 4.78 13 4.5C13 4.22 13.22 4 13.5 4H15C15.55 4 16 4.45 16 5V20C16 20.55 15.55 21 15 21H5C4.45 21 4 20.55 4 20V18.5ZM2 5.5C2 5.22 2.22 5 2.5 5H5V2.5C5 2.22 5.22 2 5.5 2C5.78 2 6 2.22 6 2.5V5.5C6 5.78 5.78 6 5.5 6H2.5C2.22 6 2 5.78 2 5.5Z"
-              />
-            </svg>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="container-f preview">
-      <div class="preview-box">
-        <div id="original-preview" class="preview"></div>
-      </div>
-      <span style="opacity: 0; user-select: none">›</span>
-      <div class="preview-box">
-        <div id="output-preview" class="preview"></div>
-      </div>
-    </div>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="script/app.js"></script>
+    <ul>
+      <li>
+        <a href="tool/smart.html"> SVG Smart </a>
+      </li>
+      <li>
+        <a href="tool/live.html"> SVG Live </a>
+      </li>
+    </ul>
   </body>
 </html>

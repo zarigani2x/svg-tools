@@ -1,0 +1,35 @@
+.container {
+  display: flex;
+  justify-content: start;
+  height: calc(100vh - 85px);
+}
+
+#input-text {
+  margin: 10px 0 0 10px;
+  padding: 10px;
+  font-family: "consolas";
+  width: 30%;
+  min-width: 30%;
+  max-width: 80%;
+  min-height: calc(100vh - 110px);
+  max-height: calc(100vh - 110px);
+  outline: none;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 1px 4px 0 #0000005e;
+}
+
+#preview-area {
+  display: flex;
+  flex-direction: column;
+  height: 90%;
+  padding: 20px;
+}
+
+#preview-area > svg:nth-child(1) {
+  height: 100%;
+  max-height: 100%;
+  width: 100%;
+  max-width: 100%;
+}

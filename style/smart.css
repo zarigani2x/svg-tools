@@ -1,23 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 
-body {
-  font-family: "Roboto", Arial, serif;
-}
-
-header {
-  height: 60px;
-  border-bottom: 1px solid gray;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-header #menu-btn {
-  width: 20px;
-  margin-left: 20px;
-  cursor: pointer;
-}
-
 .container {
   /* background-color: red; */
   margin: 40px auto;
@@ -49,40 +31,60 @@ ul#option-list > li > label {
   width: 100%;
   max-width: 1300px;
   display: flex;
-  align-items: center;
+  /* align-items: center; */
   justify-content: space-evenly;
+  height: 260px;
+}
+
+.inner-container {
+  width: 45%;
+  height: 200px;
+}
+
+.data-size {
+  margin: 0 0 5px 5px;
+  color: #7d7d7d;
+}
+
+.data-size .unit {
+  display: inline-block;
+  margin: 0 0 0 3px;
+  font-size: 0.85rem;
+}
+
+.arrow {
+  margin: 120px 0 0 0;
+  font-size: 1.2rem;
 }
 
 .textarea-box {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 45%;
-  height: 200px;
 }
 
 textarea {
-  padding: 5px;
-  border-radius: 3px;
-  min-width: 100%;
-  max-width: 100%;
+  margin: 0 5px;
+  padding: 10px;
+  border-radius: 5px;
+  min-width: 95%;
+  max-width: 950%;
   min-height: 200px;
   resize: none;
+  outline: none;
+  border: none;
+  box-shadow: 0 1px 4px 0 #0000005e;
 }
 
-/* #output-text::selection {
-  background-color: #00000000;
-} */
-
 #copy-area {
-  width: calc(45% + 10px);
-  max-width: calc(1322px * 0.45);
-  height: 210px;
+  width: calc(43% + 20px);
+  max-width: calc(1280px * 0.45);
+  height: 220px;
   position: absolute;
   display: flex;
   align-items: center;
   justify-content: center;
-  border-radius: 3px;
+  border-radius: 5px;
   cursor: pointer;
 }
 
@@ -113,12 +115,13 @@ textarea {
 }
 
 .container-f.preview {
-  margin: 25px auto 0;
+  margin: 0 auto;
 }
 
 .preview-box {
   width: 45%;
-  height: 300px;
+  height: 200px;
+  /* /* background: red; */
 }
 
 .preview > svg {

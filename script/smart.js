@@ -9,9 +9,21 @@ $("#input-text").on("input", function () {
 
 function update() {
   t = $("#input-text").val();
-  $("#original-preview").html(preFormat(t));
+  $("#data-size-in").html(t.length);
+  $("<span>", {
+    text: "bytes",
+    class: "unit",
+  }).appendTo("#data-size-in");
+
   f_t = format(t);
+  $("#data-size-out").html(f_t.length);
+  $("<span>", {
+    text: "bytes",
+    class: "unit",
+  }).appendTo("#data-size-out");
   $("#output-text").val(f_t);
+
+  $("#original-preview").html(preFormat(t));
   $("#output-preview").html(f_t);
 }
 
@@ -117,4 +129,9 @@ function checkOptions() {
   }
 }
 
-checkOptions();
+function init() {
+  checkOptions();
+  update();
+}
+
+init();

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SVG Live</title>
+    <link rel="stylesheet" href="../style/reset.css" />
+    <link rel="stylesheet" href="../style/common.css" />
+    <link rel="stylesheet" href="../style/live.css" />
+  </head>
+  <body>
+    <header>
+      <div id="menu-btn">
+        <svg viewBox="0 0 24 14" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M0 1C0 .45 .45 0 1 0H23C23.55 0 24 .45 24 1C24 1.55 23.55 2 23 2H1C.45 2 0 1.55 0 1ZM0 13C0 12.45 .45 12 1 12H23C23.55 12 24 12.45 24 13C24 13.55 23.55 14 23 14H1C.45 14 0 13.55 0 13ZM1 6C.45 6 0 6.45 0 7C0 7.55 .45 8 1 8H23C23.55 8 24 7.55 24 7C24 6.45 23.55 6 23 6H1Z"
+          />
+        </svg>
+      </div>
+      <nav>
+        <div class="nav-link"><a href="smart.html">Smart</a></div>
+        <div class="nav-link"><a href="live.html">Live</a></div>
+      </nav>
+    </header>
+    <div class="container">
+      <textarea id="input-text" placeholder="SVG input"></textarea>
+      <div id="preview-area">
+       
+      </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="../script/live.js"></script>
+  </body>
+</html>
